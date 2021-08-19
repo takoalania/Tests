@@ -1,0 +1,99 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-size: 12px;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: white;
+    height: 510px;
+    max-width: 920px
+}
+
+.image-section {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-position: right;
+    position: relative;
+    background-position: right 0% bottom 35%;
+    overflow: hidden;
+}
+
+.women-image {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: -10%;
+}
+
+.box-image {
+    top: 40%;
+    right: 71%;
+    position: fixed;
+}
+
+.content-section {
+    padding: 70px 90px;
+}
+
+.accordion {
+    width: 350px;
+}
+
+.accordion-header {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    color: hsl(238, 29%, 16%);
+    background-color: unset;
+    text-align: start;
+    cursor: pointer;
+    padding: 0;
+}
+
+.accordion-header:hover, .accordion-header:active {
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion-header img {
+    margin: auto;
+}
+
+.accordion-body {
+    display: none;
+}
+.accordion-body p {
+    margin-top: 0;
+    font-size: 13px;
+    color: hsl(240, 6%, 50%);
+    padding-right: 40px;
+}
+
+
+.accordion-header.is-open {
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.accordion-header.is-open + .accordion-body {
+    display: block;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+@media (max-width: 768px) {
+    .box-image {
+        right: 40%;
+    }
+}

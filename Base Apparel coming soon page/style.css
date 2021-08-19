@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 2px 5px 8px 12px hsl(0deg 100% 98%);
+}
+
+.form-box {
+    margin: 130px 150px 100px 120px;
+}
+
+.form-box h1 {
+    font-size: 64px;
+    margin-right: 80px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+.form-box h1 span, .form-box p  {
+    color: hsl(0, 36%, 70%);
+}
+
+.form-box p {
+    line-height: 1.5;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-wrapper{
+    width:100%;
+    position:relative;
+}
+
+.form-wrapper input {
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    border-radius: 40px;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+.form-wrapper input {
+    outline: none;
+    font-family: 'Josefin Sans';
+    padding-left: 20px;
+}
+
+.form-wrapper input::placeholder {
+    padding-left: 20px;
+    color: hsl(0, 36%, 70%);
+}
+
+.form-wrapper button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 80px;
+    height: 52px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.form-wrapper button:hover {
+    background-image: linear-gradient(135deg, #fad8d7, #f8cccd);
+}
+
+.image-box {
+    background-image: url("images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form .invalid-email-message {
+    margin: 5px 20px;
+    color: #de6c6c;
+    font-size: 12px;
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    display: none;
+}

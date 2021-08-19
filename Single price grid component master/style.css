@@ -1,0 +1,109 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    width: 635px;
+    height: 475px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 32px 80px rgb(152 166 189);
+    color: white;
+}
+
+.box1 {
+    grid-column: 1 / 3;
+    grid-row-start: 1;
+    background-color: white;
+}
+
+.box1-content {
+    margin: 40px;
+}
+
+.box2-content-amount {
+    display: flex;
+    align-items: center;
+}
+
+.box1-content h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.box1-content h3 {
+    color: hsl(71, 73%, 54%);
+    margin-top: 30px;
+}
+
+.box1-content p {
+    color: hsl(218, 22%, 67%);
+    margin-top: 10px;
+}
+
+.box2 {
+    grid-column: 1 / 2;
+    grid-row-start: 2;
+    background-color: #2ab2af;
+}
+
+.box2-content {
+    margin: 40px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.month {
+    opacity: 0.5;
+}
+
+.box2-content p {
+    color: #e5eff5;
+    font-size: 14px;
+}
+
+.box2-content button {
+    padding: 15px 0;
+    background-color: #c0df34;
+    box-shadow: 0 24px 48px (0 0 0 / 15%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.box3 {
+    grid-column: 2 / 3;
+    grid-row-start: 2;
+    background-color: #4abebd;
+}
+
+.box3-content {
+    margin: 40px;
+}
+
+.box3-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box3-content ul li {
+    font-size: 14px;
+    opacity: 0.8;
+}
